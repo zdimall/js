@@ -1,5 +1,23 @@
-body[data-vwo="loading"][data-url*="fm.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"],
-body[data-vwo="loading"][data-url*="chrudimsky.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"],
-body[data-vwo="loading"][data-url*="ustecky.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"] {
-  display:none;
+body[data-vwo="loading"][data-url*="fm.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"] .article-tags,
+body[data-vwo="loading"][data-url*="chrudimsky.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"] .article-tags,
+body[data-vwo="loading"][data-url*="ustecky.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"] .article-tags{
+  position:relative;;
+}
+
+body[data-vwo="loading"][data-url*="fm.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"] .article-tags:after,
+body[data-vwo="loading"][data-url*="chrudimsky.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"] .article-tags:after,
+body[data-vwo="loading"][data-url*="ustecky.denik.cz"]:not([data-url*="/zoh-2022-cesi/"]):not([data-url*="/zoh-200-olympijsky-festival/"]):not([data-url*="/zoh-2022/"])[data-url*=".html"] .article-tags:after{
+  content:"....";
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:flex;
+  background-color:#fff;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color:#ddd;
+  font-size:40px;
 }
